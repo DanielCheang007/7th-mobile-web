@@ -44,11 +44,11 @@ async function showWeather() {
             var dateElem = $(`#data${index + 1}`);
             dateElem.innerHTML = `date: ${data[index].date}`
             if (data[index].status === 'Rainy') {
-                $(`#image${index + 1}`).src = "../svnicons/rainy.svg"
+                $(`#image${index + 1}`).src = "./main/svnicons/rainy.svg"
             } else if (data[index].status === 'Cloudy') {
-                $(`#image${index + 1}`).src = "../svnicons/cloudy.svg"
+                $(`#image${index + 1}`).src = "./main/svnicons/cloudy.svg"
             } else {
-                $(`#image${index + 1}`).src = "../svnicons/sunny.svg"
+                $(`#image${index + 1}`).src = "./main/svnicons/sunny.svg"
             };
             var info = ''
             info = `${data[index].status}\n${data[index].lower_temperature}°C ~ ${data[index].upper_temperature}°C`
