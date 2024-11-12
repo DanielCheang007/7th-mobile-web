@@ -10,17 +10,24 @@
 body{
     font-family: Arial, sans-serif;
     margin: 0;
+
+    height:100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main{
     /* height: 90%;
     width: 100%; */
     visibility: hidden;
-    
+    display: hidden;
+
+    flex: 1;
 }
 
 .show{
     visibility: visible;
+    display: block;
 }
 
 .sticky {
