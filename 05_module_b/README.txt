@@ -1,0 +1,1 @@
+open index.html in the folder called "main" in google chrome  browser

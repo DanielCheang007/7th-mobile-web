@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气预报</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>天气预报</h1>
+</header>
+
+<div id="weatherInterface" class="container">
+    <h2 class="weather-title" id="selectedCity">城市天气预报</h2>
+    <div class="weather-container" id="weatherContainer"></div>
+    <div class="details" id="weatherDetails"></div>
+</div>
+
+<div id="locationInterface" class="container">
+    <div class="city-select">
+        <label for="city">选择城市:</label>
+        <select id="city" onchange="switchCity()">
+            <option value="">请选择城市</option>
+        </select>
+    </div>
+</div>
+
+<nav>
+    <button onclick="showWeather()"><i class="fas fa-sun"></i>天气预报</button>
+    <button onclick="showLocation()"><i class="fas fa-map-marker-alt"></i>设置位置</button>
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>

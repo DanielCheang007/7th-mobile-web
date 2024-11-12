@@ -1,0 +1,609 @@
+*{box-sizing: border-box;}
+
+body{
+    font-family: Arial, sans-serif;;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    main{
+        padding-top: 20px;
+    }
+
+    #menuTablet{
+        display: none;
+    }
+
+    .headerMainFlexCont{
+        display: flex;
+        flex-direction: row;
+        background-color: #3982a9;
+        justify-content: space-between;
+        color: white;
+        padding: 20px 10px;
+        position: sticky;
+    }
+
+    .WorldSkillsTitle{
+        font-size: 30px;
+    }
+
+    .resultBox{
+        flex-direction: column;
+        height: 270px;
+        padding: 0 20px;
+    }
+
+    #resultInnerBox{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resultItemBox{
+        padding: 10px;
+    }
+
+    #result{
+        padding: 5px;
+    }
+
+    .result{
+        background-color: #ed7531;
+        width: 100%;
+    }
+
+    .photos{
+        background-color: #441262;
+        color: white;
+        width: 50%;
+    }
+
+    .videos{
+        background-color: #c32e67;
+        color: white;
+        width: 50%;
+    }
+
+    .resultInnerBox1{
+        height: 30%;
+    }
+    .resultInnerBox2{
+        height: 20%;
+    }
+    .resultInnerBox3{
+        height: 20%;
+    }
+    .resultInnerBox4{
+        height: 20%;
+    }
+    .resultInnerBox5{
+        height: 5%;
+    }
+    .resultInnerBox6{
+        height: 5%;
+    }
+
+    .skills{
+        background-color: #441262;
+        color: white;
+        width: 50%;
+    }
+
+    .events{
+        background-color: #143661;
+        color: white;
+        width: 50%;
+    }
+
+    .museum{
+        background-color: #3982a9;
+        color: black;
+        width: 100%;
+    }
+
+    .colorbox1{
+        background-color: #9fe0d1;
+        width: 50%;
+    }
+
+    .colorbox2{
+        background-color: #89cee8;
+        width: 50%;
+    }
+
+    .colorbox3{
+        background-color: #fae44c;
+        width: 100%;
+    }
+
+    .find{
+        margin-top: 60px;
+        padding: 0 20px;
+    }
+
+    .findButton{
+        background-color: white;
+        border: 1px solid black;
+        font-size: 18px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .findButton:hover{
+        background-color: #000000;
+        color: white;
+        transition-duration: 300ms;
+    }
+
+    .newsMain{
+        margin-top: 40px;
+        background-color: #d3d3d3;
+        padding: 30px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-item {
+        height: 250px;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .news-item {
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .news-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .news-item .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        color: white;
+    }
+
+    .news-item h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .newphotos {
+        background: #441262;
+    }
+
+    .newvideos {
+        background: #c32e67;
+    }
+
+    .newsh3{
+        color: #c32e67;
+        padding-left: 20px;
+    }
+
+    .signMain{
+        background-image: url("/module_a/images/newsletter.svg");
+        background-repeat: repeat-x;
+        background-color: #441262;
+        padding: 30px;
+    }
+
+    .signFlex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signFlex h1{
+        color: white;
+    }
+
+    .signFlex form input{
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .signFlex form button{
+        background-color: #c32e67;
+        color: white;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .confMain{
+        margin: 30px;
+    }
+
+    .museum2{
+        background-color:#143661;
+        margin-top: 30px;
+        color: white;
+        padding: 30px;
+    }
+
+    .museum2 button{
+        background-color: #c32e67;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    .search{
+        margin: 30px;
+    }
+
+    .search input{
+        width: 100%;
+        padding: 15px;
+        border: 1px solid rgba(245,245,245,255);
+    }
+
+    .search button{
+        background-color: #c32e67;
+        border: 1px solid black;
+        color: white;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #c32e67;
+    }
+
+    footer{
+        background-color: #143661;
+    }
+
+    .footerflexmain{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+    }
+
+    .footerflexcol{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 25px 25px 0px ;
+    }
+
+    .footerflexbox{
+        padding-right: 40%;
+    }
+
+    .footerflexbox ol li{
+        color: white;
+        padding-bottom: 15px;
+    }
+
+    .footerflexcol a{
+        color: white;
+        padding-left: 40px;
+        padding-top: none;
+    }
+
+    #sub:hover{
+        background-color: white;
+        color: #c32e67;
+        transition-duration: 300ms;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    #search:hover{
+        background-color: white;
+        color: #c32e67;
+        transition-duration: 300ms;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ol{
+        display: none;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    main{
+        padding-top: 20px;
+    }
+
+    .headerMainFlexCont{
+        display: flex;
+        flex-direction: row;
+        background-color: #3982a9;
+        justify-content: space-between;
+        color: white;
+        padding: 20px 60px;
+        position: sticky;
+    }
+
+    .WorldSkillsTitle{
+        font-size: 25px;
+        transform: translateY(10px);
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #menuTablet{
+        display: flex;
+        gap: 20px;
+    }
+
+    .find{
+        margin-top: 60px;
+        padding: 0 15%;
+    }
+
+    .findButton{
+        background-color: white;
+        border: 1px solid black;
+        font-size: 18px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .findButton:hover{
+        background-color: #000000;
+        color: white;
+        transition-duration: 300ms;
+    }
+
+    .newsMain{
+        margin-top: 40px;
+        background-color: #d3d3d3;
+        padding: 5% 10%;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-item {
+        height: 250px;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .news-item {
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .news-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .news-item .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        color: white;
+    }
+
+    .news-item h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .newphotos {
+        background: #441262;
+    }
+
+    .newvideos {
+        background: #c32e67;
+    }
+    .newsh3{
+        color: #c32e67;
+        padding-left: 20px;
+    }
+
+    .signMain{
+        background-image: url("/module_a/images/newsletter.svg");
+        background-repeat: repeat-x;
+        background-color: #441262;
+        padding: 10%;
+    }
+
+    .signFlex{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .signFlex form{
+        display: flex;
+        flex-direction: row;
+        transform: translateY(25%) translateX(-1.5%);
+        margin-left: 10px;
+    }
+
+    .signFlex h1{
+        color: white;
+    }
+
+    .signFlex form input{
+        height: 50%;
+        width: 80%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .signFlex form button{
+        height: 50%;
+        background-color: #c32e67;
+        color: white;
+        width: 20%;
+        font-size: 1.2rem;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        scale: 0.95;
+    }
+
+    .confMain{
+        margin: 30px;
+    }
+
+    .museum2{
+        background-color:#143661;
+        margin-top: 30px;
+        color: white;
+        padding:5% 10%;
+    }
+
+    .museum2 button{
+        background-color: #c32e67;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    .search{
+        margin: 30px;
+    }
+
+    .search form{
+        display: flex;
+    }
+
+    .search input{
+        width: 100%;
+        padding: 15px;
+        border: 1px solid rgba(245,245,245,255);
+    }
+
+    .search button{
+        background-color: #c32e67;
+        border: 1px solid black;
+        color: white;
+        font-size: 1.2rem;
+        width: 20%;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #c32e67;
+    }
+
+    footer{
+        background-color: #143661;
+    }
+
+    .footerflexmain{
+        display: flex;
+        flex-direction: row;
+        padding-top: 25px;
+    }
+
+    .footerflexcol{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 25px 25px 0px ;
+    }
+
+    .footerflexbox{
+        padding-right: 10px;
+    }
+
+    .footerflexbox ol li{
+        color: white;
+        padding-bottom: 15px;
+    }
+
+    .footerflexcol a{
+        color: white;
+        padding-left: 40px;
+        padding-top: none;
+    }
+
+    #sub:hover{
+        background-color: white;
+        color: #c32e67;
+        transition-duration: 300ms;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    #search:hover{
+        background-color: white;
+        color: #c32e67;
+        transition-duration: 300ms;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    #copy{
+        transform: translateX(-575px) translateY(80%);
+    }
+}

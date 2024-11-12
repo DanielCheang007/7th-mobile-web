@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .unselectable {
+    pointer-events: none;
+    width: 200px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.main{
+    height: 90%;
+    width: 100%;
+    visibility: hidden;
+    
+}
+
+.show{
+    visibility: visible;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 100vw;
+    z-index: 100;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper {
+    display: flex;
+    width: 300vw; /* 3 times viewport width for 3 slides */
+    height: 80vh;
+    transition: transform 0.3s ease-out;
+}
+
+.slide {
+    width: 100vw;
+    height: 80vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+    flex-direction: column;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0px;
+
+}
+
+footer button{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: chartreuse;
+}
+
+header{
+    display: flex;
+    text-align: center;
+}

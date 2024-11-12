@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七日天氣預報</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div id="main" class="main wethear show">
+            <center><div id="header" class="sticky"></div></center>
+            <div class="container">
+                <div class="swiper">
+                    <div class="slide" id="slide1">
+                        <div id="data1">date:</div>
+                        <br>
+                        <img class="unselectable" id="image1">
+                        <div id="info1"></div>
+                    </div>
+                    <div class="slide" id="slide2">
+                        <div id="data2"></div>
+                        <img class="unselectable" id="image2">
+                        <div id="info2"></div>
+                    </div>
+                    <div class="slide" id="slide3">
+                        <div id="data3"></div>
+                        <img class="unselectable" id="image3">
+                        <div id="info3"></div>
+                    </div>
+                    <div class="slide" id="slide4">
+                        <div id="data4"></div>
+                        <img class="unselectable" id="image4">
+                        <div id="info4"></div>
+                    </div>
+                    <div class="slide" id="slide5">
+                        <div id="data5"></div>
+                        <img class="unselectable" id="image5">
+                        <div id="info5"></div>
+                    </div>
+                    <div class="slide" id="slide6">
+                        <div id="data6"></div>
+                        <img class="unselectable" id="image6">
+                        <div id="info6"></div>
+                    </div>
+                    <div class="slide" id="slide7">
+                        <div id="data7"></div>
+                        <img class="unselectable" id="image7">
+                        <div id="info7"></div>
+                    </div>
+                </div>
+                <div class="indicator">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div id="setting" class="main setting">
+            <center><h1>choose Location</h1></center>
+            <div>
+                <input onchange="getSelectedValue()" type="radio" id="Macao" name="radiolist" value="Macao">
+                <label for="Macao">Macao</label><br>
+                <input onchange="getSelectedValue()" type="radio" id="Hong Kong" name="radiolist" value="Hong Kong">
+                <label for="Hong Kong">Hong Kong</label><br>
+                <input onchange="getSelectedValue()" type="radio" id="Lyon" name="radiolist" value="Lyon">
+                <label for="Lyon">Lyon</label><br>
+                <input onchange="getSelectedValue()" type="radio" id="London" name="radiolist" value="London">
+                <label for="London">London</label><br>
+                <input onchange="getSelectedValue()" type="radio" id="Helsinki" name="radiolist" value="Helsinki">
+                <label for="Helsinki">Helsinki</label><br>
+                <input onchange="getSelectedValue()" type="radio" id="Beijing" name="radiolist" value="Beijing">
+                <label for="Beijing">Beijing</label><br>
+                </div>
+            
+            
+        </div>
+    </main>
+    <footer class="sticky">
+        <button id="mainbtt">主頁</button>
+        <button id="settingbtt">設定</button>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
