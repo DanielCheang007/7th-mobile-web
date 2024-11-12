@@ -16,13 +16,13 @@ body{
     flex-direction: column;
 }
 
+main {flex: 1;}
+
 .main{
     /* height: 90%;
     width: 100%; */
     visibility: hidden;
-    display: hidden;
-
-    flex: 1;
+    display: none;    
 }
 
 .show{
