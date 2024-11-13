@@ -119,3 +119,15 @@ li a {
 .container {
     margin: 0 1rem;
 }
+
+header {
+    display: flex;
+    gap: 0 1rem;
+    height: 120px;
+    padding: 10px;
+}
+
+header img {
+    height: 100px;
+    max-width: 100%;
+}
