@@ -177,3 +177,8 @@ main {
 main .names {
     text-align: center;
 }
+
+.comp-name {
+    font-size: 1.25rem;
+    margin: .5rem 0;
+}
