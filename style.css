@@ -61,7 +61,7 @@
 body {
     margin: 0;
     padding: 0;
-    
+
     min-height: 100vh;
     color: var(--color-text);
     background: var(--color-background);
@@ -135,20 +135,26 @@ header {
     background: linear-gradient(45deg, rgb(227 242 245), hsl(232.73deg 37.08% 82.55%));
 }
 
+header > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 header img {
     height: 100px;
     max-width: 100%;
 }
 
-header img:nth-child(1) {
-    height: 60%;
+header .cpttm img {
+    height: 80%;
 }
 
-header img:nth-child(3) {
-    height: 60%;
+header .msc img {
+    height: 70%;
 }
 
-header img:nth-child(4) {
+header .mcs img {
     height: 75%;
 }
 
@@ -156,6 +162,7 @@ header .corp,
 header .sup {
     font-weight: bold;
     border-right: 1px solid #ccc;
+    padding: 1rem;
 }
 
 header .sup {
