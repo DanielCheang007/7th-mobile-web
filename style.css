@@ -119,9 +119,7 @@ li a {
     color: #fefefe;
 }
   
-main {
-    margin: 0 1rem;
-}
+
 
 header {
     display: flex;
@@ -170,4 +168,12 @@ header .sup {
 
 header .sup {
     margin-left: 2rem;
+}
+
+main {
+    margin: 0 1rem;
+}
+
+main .names {
+    text-align: center;
 }
