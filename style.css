@@ -360,6 +360,10 @@ footer {
     gap: 0 .5rem;
   }
 
+  header .sup {
+    margin-left: .5rem;
+  }
+
   h1 {
     font-size: 1rem;
   }
@@ -375,7 +379,7 @@ footer {
   section {
     flex-flow: wrap;
     gap: 0 .5rem;
-    margin: 1rem .5rem;
+    margin: 2rem .5rem;
   }
 
   section .names {
