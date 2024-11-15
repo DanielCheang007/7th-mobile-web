@@ -351,3 +351,21 @@ footer {
   /* animation: blink 12s infinite; */
   /* -webkit-animation: blink 12s infinite; */
 }
+
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 56px;
+    font-size: .75rem;
+    gap: 0 .5rem;
+  }
+
+  section {
+    flex-flow: wrap;
+    gap: 0 .5rem;
+  }
+
+  section .names {
+    flex-basis: 60%;
+  }
+}
