@@ -361,6 +361,10 @@ footer {
     padding: 4px;
   }
 
+  header .corp, header .sup {
+    width: 4rem;
+  }
+
   header .sup {
     margin-left: .5rem;
   }
