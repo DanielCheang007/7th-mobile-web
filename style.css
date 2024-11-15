@@ -355,7 +355,7 @@ footer {
 
 @media screen and (max-width: 480px) {
   header {
-    height: 56px;
+    height: 48px;
     font-size: .75rem;
     gap: 0 .5rem;
     padding: 4px;
@@ -363,6 +363,9 @@ footer {
 
   header .corp, header .sup {
     width: 4rem;
+    flex-basis: 4rem;
+    padding: 0;
+    margin-right:.5rem;
   }
 
   header .sup {
