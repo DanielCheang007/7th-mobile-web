@@ -360,6 +360,14 @@ footer {
     gap: 0 .5rem;
   }
 
+  h1 {
+    font-size: 1rem;
+  }
+
+  .glow {
+    font-size: 1.25rem;
+  }
+
   section {
     flex-flow: wrap;
     gap: 0 .5rem;
