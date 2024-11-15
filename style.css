@@ -371,6 +371,7 @@ footer {
   section {
     flex-flow: wrap;
     gap: 0 .5rem;
+    margin: .5rem;
   }
 
   section .names {
