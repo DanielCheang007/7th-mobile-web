@@ -368,13 +368,21 @@ footer {
     font-size: 1.25rem;
   }
 
+  main {
+    margin: 0;
+  }
+
   section {
     flex-flow: wrap;
     gap: 0 .5rem;
-    margin: .5rem;
+    margin: 1rem .5rem;
   }
 
   section .names {
     flex-basis: 60%;
+  }
+
+  section .comp-name {
+    font-size: 1.75rem;
   }
 }
