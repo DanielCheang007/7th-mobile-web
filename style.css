@@ -139,7 +139,7 @@ li a {
 header {
   display: flex;
   gap: 0 1rem;
-  height: 120px;
+  height: 80px;
   padding: 10px;
 
   align-items: center;
@@ -164,7 +164,7 @@ header > div {
 }
 
 header img {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 header .cpttm img {
@@ -172,15 +172,15 @@ header .cpttm img {
 }
 
 header .dsedj img {
-  height: 90%;
+  height: 95%;
 }
 
 header .msc img {
-  height: 50%;
+  height: 45%;
 }
 
 header .mcs img {
-  height: 70%;
+  height: 45%;
 }
 
 header .corp,
@@ -243,8 +243,8 @@ section .names {
 .work-icons a {
   display: grid;
   place-items: center;
-  width: 128px;
-  height: 128px;
+  width: 96px;
+  height: 96px;
   padding: 0;
 }
 
@@ -302,7 +302,7 @@ footer {
   background-color: #ffa12b;
   display: block;
   position: relative;
-  padding: 20px 40px;
+  padding: 20px 20px;
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-shadow: 0px 1px 0px #000;
