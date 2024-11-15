@@ -358,6 +358,7 @@ footer {
     height: 56px;
     font-size: .75rem;
     gap: 0 .5rem;
+    padding: 4px;
   }
 
   header .sup {
@@ -380,6 +381,7 @@ footer {
     flex-flow: wrap;
     gap: 0 .5rem;
     margin: 2rem .5rem;
+    margin-bottom: 4rem;
   }
 
   section .names {
